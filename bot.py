@@ -1,3 +1,5 @@
+import sys
+print(sys.version)
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from yt_dlp import YoutubeDL
