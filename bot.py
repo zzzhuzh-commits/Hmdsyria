@@ -2,6 +2,20 @@ import sys
 print(sys.version)
 import asyncio
 
+from flask import Flask
+import threading
+import os
+
+web = Flask(__name__)
+
+@web.route("/")
+def home():
+    return "Bot Running"
+
+def run_web():
+    web.run(host="0.0.0.0", port=int(os.environ.get("PORT", 10000)))
+
+threading.Thread(target=run_web, daemon=True).start()
 asyncio.set_event_loop(asyncio.new_event_loop())
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
