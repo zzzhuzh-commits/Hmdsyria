@@ -152,11 +152,14 @@ async def start(_, msg):
     await msg.reply("🔥 بوت VC عربي ULTRA شغال")
 
 from pyrogram import idle
+import time
 
-print("BEFORE START")
-
-app.start()
-
-print("AFTER START")
-
-idle()
+while True:
+    try:
+        print("STARTING BOT...")
+        app.start()
+        idle()
+        break
+    except Exception as e:
+        print(e)
+        time.sleep(400)
