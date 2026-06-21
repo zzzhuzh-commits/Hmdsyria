@@ -25,7 +25,7 @@ from vc import vc
 from database import queue, state
 from sudo import is_sudo
 import config
-
+print("CONFIG OK")
 app = Client(
     "vc-ultra",
     bot_token=config.BOT_TOKEN,
