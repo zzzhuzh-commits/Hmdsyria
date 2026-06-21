@@ -153,5 +153,7 @@ async def start(_, msg):
 
 from pyrogram import idle
 
+print("STARTING BOT...")
 app.start()
 idle()
+app.stop()
