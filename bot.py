@@ -151,4 +151,7 @@ async def buttons(_, cb):
 async def start(_, msg):
     await msg.reply("🔥 بوت VC عربي ULTRA شغال")
 
-app.run()
+from pyrogram import idle
+
+app.start()
+idle()
