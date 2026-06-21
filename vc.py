@@ -1,5 +1,5 @@
 from pytgcalls import PyTgCalls
-from pytgcalls.types.input_stream import AudioPiped
+from pytgcalls.types import AudioPiped
 from pyrogram import Client
 import config
 
