@@ -3,5 +3,4 @@ pyrogram==2.0.106
 yt-dlp
 pymongo==4.6.1
 tgcrypto
-No open ports detected
 flask
